@@ -1,0 +1,443 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+:root {
+  --color-primary: #5E72E4;
+  --color-secondary: #F4F5F7;
+  --color-danger: #F5365C;
+  --color-info: #11CDEF;
+  --color-success: #2DCE89;
+  --color-warning: #D8D8D8;
+  --color-purple: #7b61ff;
+  --color-charcoal: #222222;
+  --color-red: #fc5555;
+  --color-green: #29cc6a;
+  --color-blue: #0099ff;
+  --color-white: #ffffff;
+  --color-infoo:#f3f3f3;
+  --color-131921: #131921;
+  --color-3b4149:#3b4149;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
+  --color-bf4800:#bf4800;
+  --color-f5f5f7:#f5f5f7;
+  --color-ededed:#ededed;
+  --color-777777:#777777;
+  --color-1c1c1b:#1c1c1b;
+}
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.logoo {
+  height: 50px;
+  border-radius: 10px;
+  margin: 16px;
+  background: rgb(9 ,38, 82);
+  color: aliceblue;
+  display: flex; /* Added */
+  justify-content: center; /* Added */
+  align-items: center;
+}
+.logo h1{
+  margin-top: 5px;
+}
+.a{
+  background-color: aliceblue;
+}
+.ant-layout {
+  min-height: 100vh;
+}
+.ant-layout-sider {
+  flex: 0 0 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  width: 250px !important;
+}
+.ant-layout-sider-collapsed {
+  flex: 0 0 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+  width: 80px !important;
+}
+.sm-logo {
+  display: none;
+}
+
+.ant-layout-sider-collapsed .sm-logo {
+  display: block;
+}
+.ant-layout-sider-collapsed .lg-logo {
+  display: none;
+}
+.logo {
+  background-color: #ffd333;
+  margin: 0;
+  height: 64px;
+}
+main {
+  height: 85vh;
+  overflow-y: scroll;
+  background-color: transparent !important;
+}
+main::-webkit-scrollbar {
+  width: 0px;
+}
+.ant-menu-title-content {
+  font-size: 16px;
+}
+.ant-layout-header h5 {
+  line-height: 20px;
+  font-size: 14px;
+}
+.ant-layout-header p {
+  line-height: 20px;
+  font-size: 13px;
+}
+.ant-layout-header div .badge {
+  top: 16px;
+  right: -6px;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.wallet-card{
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  margin-top: 20px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100%; /* Match the height of the parent div */
+  background-color: var(--color-white); /* Color of the line */
+}
+
+.invoice-card {
+  display: flex;
+  background-color: var(--color-infoo); /* Use custom color or replace with a specific color */
+  border-radius: 10px;
+  border: 1px solid #dee2e6; /* Add border */
+  margin: 10px;
+  padding: 20px; /* Add padding for better spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.invoice-card .row {
+  flex: 1; /* Make the row fill the available space */
+}
+
+.invoice-card .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px; /* Add margin for spacing between columns */
+}
+
+.invoice-card .text-primary {
+  font-size: 16px;
+  color: #000000; /* Set text color */
+}
+
+.invoice-card .text-success {
+  font-size: 18px;
+  color: #28a745; /* Set text color */
+}
+
+.invoice-card h3, .invoice-card p {
+  margin: 0;
+  color: #000000; /* Set text color */
+}
+
+.user-info-card {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure overflow is hidden to prevent content from overflowing */
+}
+
+.user-info-card .row {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.user-info-card h5 {
+  margin-bottom: 10px;
+}
+
+.client-list-card {
+  background-color: var(--color-infoo);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.client-name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.client-email, .client-address {
+  color: var(--color-charcoal);
+  margin-bottom: 3px;
+}
+
+.client-address {
+  font-style: italic;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.item-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.item-container th,
+.item-container td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.item-container input[type="number"],
+.item-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.item-container input[type="number"]::-webkit-inner-spin-button,
+.item-container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.item-container h4 {
+  margin-bottom: 10px;
+}
+.item-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.btn-add-item {
+  margin-top: 20px;
+}
+
+.item-container .form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.item-container .form-group:last-child {
+  grid-template-columns: 1fr;
+}
+.desc {
+  font-size: 1.5rem; /* Base font size */
+}
+.invoice-bill {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-bill h2 {
+  color: #007bff;
+}
+
+.invoice-bill p {
+  margin-bottom: 0.5rem;
+}
+
+.invoice-bill th {
+  font-weight: bold;
+}
+
+
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+.auth-card h3{
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-777777);
+}
+.auth-card p{
+  font-size: 13px;
+  color: var(--color-777777);
+}
+.auth-card .form-control{
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-777777);
+  font-size: 14px;
+  border-radius: 10px;
+  border: transparent;
+}
+.auth-card a{
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+ .signup{
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+  border: none;
+}
+ .signup:hover{
+  background-color: var(--color-131921);
+  color:white;
+}
+
+.btn-add-item {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-add-item:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 992px) {
+  /* Adjust font size for medium screens */
+  .desc {
+    font-size: 1.2rem;
+  }
+  .invoice-card .text-primary {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust font size for small screens */
+  .desc {
+    font-size: 1rem;
+  }
+  .form-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .invoice-card .text-primary {
+    font-size: 12px;
+  }
+  .invoice-card h3 {
+    font-size: 16px;
+  }
+  .user-info-card .row {
+    flex-direction: column;
+  }
+  .invoice-bill {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust font size for extra small screens */
+  .desc {
+    font-size: 0.8rem;
+  }
+  .invoice-card .text-primary {
+    font-size: 10px;
+  }
+  .invoice-card h3 {
+    font-size: 14px;
+  }
+  .invoice-card .text-success {
+    font-size: 16px;
+  }
+}
+
+.sub-title {
+  font-size: 2rem; /* Base font size */
+}
+
+@media (max-width: 992px) {
+  /* Adjust font size for medium screens */
+  .sub-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust font size for small screens */
+  .sub-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust font size for extra small screens */
+  .sub-title {
+    font-size: 1rem;
+  }
+  .user-info-card {
+    padding: 10px;
+  }
+}
+
